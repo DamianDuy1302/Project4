@@ -11,14 +11,17 @@ navIconOpen.addEventListener("click", function(){
     navIconOpen.classList.add("hidden");
     navIconClose.classList.remove("hidden");
 })
-navIconClose.addEventListener("click", function(){
+
+function closeNav(){
     const nav_menu = document.querySelector(".navigation__menu");
     const nav_content = document.querySelector(".navigation__content");
     nav_content.style.padding = "30px 30px 30px 30px";
     nav_menu.style.display = "none";
     navIconOpen.classList.remove("hidden");
     navIconClose.classList.add("hidden");
-})
+}
+
+navIconClose.addEventListener("click", closeNav())
 
 
 
@@ -29,6 +32,7 @@ menu_sections.forEach(function(item){
         const current_section  = document.querySelector(".navigation__section--active")
         current_section.classList.remove("navigation__section--active");
         this.classList.add("navigation__section--active");
+        closeNav();
     })
 })
 
