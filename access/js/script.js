@@ -6,8 +6,10 @@ navIconOpen.addEventListener("click", function(){
     const nav_menu = document.querySelector(".navigation__menu");
     const nav_content = document.querySelector(".navigation__content");
     nav_content.style.borderRadius = "45px";
-    nav_content.style.padding = "30px 30px 10px 30px";
+    nav_content.style.padding = "30px 30px 0px 30px";
     nav_menu.style.display = "block";
+    // nav_menu.style.animation = "nav_menuShowup 0.5s ease";
+    // nav_menu.style.height = "100%";
     navIconOpen.classList.add("hidden");
     navIconClose.classList.remove("hidden");
 })
@@ -15,13 +17,14 @@ navIconOpen.addEventListener("click", function(){
 function closeNav(){
     const nav_menu = document.querySelector(".navigation__menu");
     const nav_content = document.querySelector(".navigation__content");
-    nav_content.style.padding = "30px 30px 30px 30px";
+    // nav_content.style.padding = "30px 30px 30px 30px";
     nav_menu.style.display = "none";
+    // nav_menu.style.height = "0%";
     navIconOpen.classList.remove("hidden");
     navIconClose.classList.add("hidden");
 }
 
-navIconClose.addEventListener("click", closeNav())
+navIconClose.addEventListener("click", closeNav)
 
 
 

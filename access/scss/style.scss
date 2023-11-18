@@ -1,29 +1,35 @@
 @import "variables.scss";
 
-html{
+html {
     scroll-behavior: smooth;
 }
-.hidden{
+
+.hidden {
     display: none !important;
 }
-.line-through{
+
+.line-through {
     text-decoration: line-through;
 }
+
 ::selection {
     background-color: #{$color-pink};
 }
-.commonSection{
+
+.commonSection {
     padding: 20vh 0;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
-.commonHeader{
+
+.commonHeader {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .boxContent {
     display: flex;
     flex-direction: column;
@@ -62,23 +68,6 @@ html{
     margin-bottom: 30px;
 }
 
-// @keyframes nav_menu2Showup{
-//     0%{
-//         height: 0%;
-//     }
-//     25%{
-//         height: 25%;
-//     }
-//     50%{
-//         height: 50%;
-//     }
-//     75%{
-//         height: 75%;
-//     }
-//     100%{
-//         height: 100%;
-//     }
-// }
 
 .navigation {
     position: fixed;
@@ -86,7 +75,7 @@ html{
     left: auto;
     width: 100%;
     z-index: 999;
-    
+
     &__content {
         display: flex;
         background-color: #fff;
@@ -109,7 +98,7 @@ html{
         margin-right: 15px;
         justify-content: space-evenly;
         flex: 1;
-        align-items: center;   
+        align-items: center;
     }
 
 
@@ -133,7 +122,7 @@ html{
         justify-content: center;
     }
 
-    &__menuIconOpen{
+    &__menuIconOpen {
         margin-top: 0px;
         margin-right: 15px;
         display: none;
@@ -144,7 +133,8 @@ html{
     &__menuIconOpen i {
         font-size: 32px;
     }
-    &__menuIconClose{
+
+    &__menuIconClose {
         margin-top: 0px;
         margin-right: 15px;
         // display: none;
@@ -223,16 +213,20 @@ html{
     &__button:hover {
         background-color: #{$color-purple};
     }
-    &__button--purple{
+
+    &__button--purple {
         background-color: #{$color-purple};
     }
-    &__button--purple:hover{
+
+    &__button--purple:hover {
         background-color: #{$color-pink};
     }
 }
-.roll{
+
+.roll {
     height: 20vh;
 }
+
 .section2 {
     padding-bottom: 20vh;
 
@@ -256,7 +250,7 @@ html{
 
     &__content {
         // margin-left: 60px;
-        
+
     }
 
     &__titleMain {
@@ -311,31 +305,35 @@ html{
 
 }
 
-.section3{
+.section3 {
     // height: 80vh;
     background-image: url(https://templatemo.com/templates/templatemo_535_softy_pinko/assets/images/work-process-bg.png);
     @extend .commonSection;
 
-    &__header{
+    &__header {
         @extend .commonHeader;
     }
-    &__box{
+
+    &__box {
         @extend .boxContent
     }
-    &__titleMain{
+
+    &__titleMain {
         @extend .boxContent__titleMain
     }
-    &__description{
+
+    &__description {
         @extend .boxContent__description
     }
 
-    &__boxes{
+    &__boxes {
         display: flex;
         flex-wrap: wrap;
         margin-top: 45px;
     }
-    &__box{
-        @extend .boxForm  ; 
+
+    &__box {
+        @extend .boxForm;
         // max-width: 150px;   / 
         position: relative;
         z-index: 900;
@@ -344,20 +342,22 @@ html{
         margin-bottom: 30px;
         transition: 0.5s ease;
     }
-    &__box::after{
+
+    &__box::after {
         content: '';
         // @extend .boxForm ; 
-        width: 100%;   
+        width: 100%;
         height: 100%;
         position: absolute;
         bottom: -10px;
         right: -10px;
-        background-color: #ffffff; 
+        background-color: #ffffff;
         opacity: 0.15;
         border-radius: 15px;
         z-index: -1;
     }
-    &__box:hover{
+
+    &__box:hover {
         margin-top: -15px;
     }
 
@@ -375,50 +375,59 @@ html{
 
 }
 
-.section4{
+.section4 {
     @extend .commonSection;
     text-align: center;
     background-color: #ffffff;
-    &__header{
+
+    &__header {
         @extend .commonHeader;
-        
+
     }
-    &__titleMain{
+
+    &__titleMain {
         @extend .boxContent__titleMain;
         color: #000;
     }
-    &__description{
+
+    &__description {
         @extend .boxContent__description;
         color: #777777;
         width: 75%;
         // text-align: center;
     }
-    &__boxes{
+
+    &__boxes {
         display: flex;
         flex-wrap: wrap;
         margin-top: 45px;
     }
-    &__box{
+
+    &__box {
         @extend .boxForm;
         background-color: #fff;
         // padding: ;
     }
+
     &__miniTitle {
         font-size: 20px;
         font-weight: 600;
         margin-top: 15px;
     }
+
     &__miniDesc {
         margin-top: 15px;
         font-size: 16px;
     }
-    &__userInfor{
+
+    &__userInfor {
         margin-top: 15px;
         // border: 1px solid #ccc;
         width: 90%;
         display: flex;
     }
-    &__userAvatar{
+
+    &__userAvatar {
         aspect-ratio: 1/1;
         // height: 100%;
         width: 60px;
@@ -426,7 +435,8 @@ html{
         border-radius: 50%;
         background-color: #{$color-pink};
     }
-    &__userNameAndJob{
+
+    &__userNameAndJob {
         flex: 1;
         display: flex;
         flex-direction: column;
@@ -434,70 +444,84 @@ html{
         align-items: left;
         transition: 0.5s ease;
     }
-    &__userNameAndJob:hover{
+
+    &__userNameAndJob:hover {
         margin-left: 15px;
 
     }
-    &__userName{
+
+    &__userName {
         font-size: 18px;
         font-weight: 500;
     }
 
-    
+
 }
 
-.section5{
+.section5 {
     @extend .commonSection;
     text-align: center;
     background-color: #ffffff;
-    &__header{
+
+    &__header {
         @extend .commonHeader;
-        
+
     }
-    &__titleMain{
+
+    &__titleMain {
         @extend .boxContent__titleMain;
         color: #000;
     }
-    &__description{
+
+    &__description {
         @extend .boxContent__description;
         color: #777777;
         width: 75%;
         // text-align: center;
     }
-    &__boxes{
+
+    &__boxes {
         display: flex;
         flex-wrap: wrap;
         margin-top: 45px;
     }
-    &__box{
+
+    &__box {
         @extend .boxForm;
         background-color: #fff;
         // padding: ;
     }
-    &__miniTitle{
+
+    &__miniTitle {
         font-size: 20px;
         font-weight: 600;
     }
-    &__price{
+
+    &__price {
         padding: 15px 0;
         width: 80%;
         border-radius: 15px;
         margin: 15px 0;
     }
-    &__price p{
+
+    &__price p {
         // padding: 10px 20px;
         margin: 0;
     }
-    &__price--purple{
+
+    &__price--purple {
         background-color: #{$color-purple};
     }
-    &__price--pink{
+
+    &__price--pink {
         background-color: #{$color-pink};
     }
-    &__services{
+
+    &__services {
         margin: 15px 0;
     }
-    &__services p{
+
+    &__services p {
         font-size: 14px;
         color: #8f8f8f;
 
@@ -505,22 +529,24 @@ html{
 
 }
 
-.section6{
+.section6 {
     background-image: url(https://templatemo.com/templates/templatemo_535_softy_pinko/assets/images/fun-facts-bg.png);
     @extend .commonSection;
 
-    &__boxes{
+    &__boxes {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         // overflow: hidden;
     }
-    &__box p{
+
+    &__box p {
         margin: 0;
         color: #fff;
         transition: 0.5s ease;
     }
-    &__box h3{
+
+    &__box h3 {
         margin-bottom: 10px;
         color: #fff;
         font-size: 36px;
@@ -529,7 +555,7 @@ html{
     }
 
 
-    &__box{
+    &__box {
         // background-color: #fff;
         display: flex;
         flex-direction: column;
@@ -538,16 +564,18 @@ html{
         padding: 10px 0;
         position: relative;
         cursor: pointer;
-        
+
     }
-    &__box:hover h3{
-        margin-top: -10px;
-    }
-    &__box:hover p{
+
+    &__box:hover h3 {
         margin-top: -10px;
     }
 
-    &__has_before::before{
+    &__box:hover p {
+        margin-top: -10px;
+    }
+
+    &__has_before::before {
         content: '';
         position: absolute;
         background: url(https://templatemo.com/templates/templatemo_535_softy_pinko/assets/images/circle-dec.png) center center no-repeat;
@@ -558,87 +586,102 @@ html{
     }
 }
 
-.section7{
+.section7 {
     @extend .commonSection;
-    &__header{
+
+    &__header {
         @extend .commonHeader
     }
-    &__titleMain{
+
+    &__titleMain {
         @extend .boxContent__titleMain;
         color: #000;
     }
-    &__description{
+
+    &__description {
         @extend .boxContent__description;
         color: #777777;
         width: 75%;
         // text-align: center;
     }
-    &__boxes{
+
+    &__boxes {
         display: flex;
         flex-wrap: wrap;
         margin-top: 45px;
     }
-    &__box{
+
+    &__box {
         @extend .boxForm
     }
-    &__miniImage{
+
+    &__miniImage {
         aspect-ratio: 16/9;
         object-fit: cover;
     }
-    &__miniImage img{
+
+    &__miniImage img {
         width: 100%;
     }
-    &__miniTitle{
+
+    &__miniTitle {
         @extend .boxContent__titleMain;
         color: #000;
         font-size: 20px;
         margin-top: 15px;
     }
-    &__miniDesc{
+
+    &__miniDesc {
         font-size: 14px;
         color: #888888;
         margin-bottom: 15px;
     }
 }
 
-.section8{
+.section8 {
     background-color: #{$color-purple};
     @extend .commonSection;
-    &__header{
+
+    &__header {
         @extend .commonHeader;
     }
-    &__titleMain{
+
+    &__titleMain {
         @extend .boxContent__titleMain;
         color: #ffffff;
     }
-    &__description{
+
+    &__description {
         @extend .boxContent__description;
         color: #ffffff;
         width: 75%;
         // text-align: center;
     }
-    &__boxes{
+
+    &__boxes {
         display: flex;
         flex-wrap: wrap;
         margin-top: 45px;
     }
-    &__inforContent{
+
+    &__inforContent {
         color: #fff;
         display: flex;
         flex-direction: column;
         // justify-content: space-between;
         height: 100%;
     }
-    &__span{
+
+    &__span {
         flex: 1;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
     }
-    &__form{
 
-    }
-    &__input{
+    &__form {}
+
+    &__input {
         width: 100%;
         padding: 12px 20px;
         border-radius: 50px;
@@ -646,7 +689,8 @@ html{
         border: none;
         margin-bottom: 15px;
     }
-    &__button{
+
+    &__button {
         margin-top: 5px;
         width: 150px;
         display: flex;
@@ -654,13 +698,15 @@ html{
         align-items: center;
         transition: ease 0.25s;
     }
-    &__button:hover{
+
+    &__button:hover {
         background-color: #{$color-pink};
         scale: 1.05;
     }
 }
-#section8{
-    &__textarea{
+
+#section8 {
+    &__textarea {
         width: 100%;
         padding: 12px 20px;
         border-radius: 20px;
@@ -669,58 +715,94 @@ html{
     }
 }
 
-@media(min-width: 992px){
+@keyframes nav_menuShowup{
+    0%{
+        height: 0%;
+        opacity: 0;
+    }
+    25%{
+        height: 25%;
+        opacity: 0.25;
+    }
+    50%{
+        height: 50%;
+        opacity: 0.5;
+    }
+    75%{
+        height: 75%;
+        opacity: 0.75;
+    }
+    100%{
+        height: 100%;
+        opacity: 1;
+    }
+}
+
+.showup{
+    
+}
+
+@media(min-width: 992px) {
     .navigation {
-        
-        &__content{
+
+        &__content {
             padding: 30px !important;
         }
 
-        &__menu{
+        &__menu {
             display: flex !important;
         }
-        &__menuIconClose{
+
+        &__menuIconClose {
             display: none;
         }
-  
+
     }
 }
 
 @media(max-width: 991.98px) {
     .navigation {
-        &__content{
-            // border-radius: 60px;
+        // padding-right: 0;
+        &__content {
             display: block;
-            // display: none;
-            // padding-bottom: 10px;
+            overflow: hidden;
+            padding: 0px !important;
+            // padding-right: 0;
+            
         }
-        &__logoAndIcon{
+        &__logoAndIcon {
             display: flex;
             justify-content: space-between;
+            padding: 30px 30px 30px 30px;
         }
-
-        &__menu{
-            // display: block;
+        &__menu {
             display: none;
+            // height: 0%;
             margin-right: 0px;
-            padding-top: 30px;
+            padding-top: 0px;
+            margin-top: 0px;
             text-align: center;
-            // padding-bottom: -10px;
-
+            // transition: ease 0.5s;
+            // transition: showup 0.35s ease;
+            
         }
-        &__section{
+
+        &__section {
             padding: 15px;
             border-top: 1px solid #ccc;
+            width: 100%;
         }
 
-
+        &__section:hover {
+            background-color: #ccc;
+        }
 
         &__menuIconOpen {
             display: block;
         }
 
 
-  
+
     }
 
     .section2 {
@@ -759,19 +841,22 @@ html{
             // font-weight: 500;
             display: none;
         }
-        &__box{
+
+        &__box {
             padding-top: 5vh;
         }
     }
-    .roll{
+
+    .roll {
         height: 5vh;
     }
 
-    .section4{
-        &__userInfor{
+    .section4 {
+        &__userInfor {
             margin-top: 30px;
         }
-        &__userNameAndJob{
+
+        &__userNameAndJob {
             // flex: 1;
             display: flex;
             flex-direction: column;
@@ -782,36 +867,42 @@ html{
             // margin-top: 30px;
             // padding-top: 15px;
         }
-        &__userName{
+
+        &__userName {
             text-align: left;
         }
-        &__userJob{
+
+        &__userJob {
             text-align: left;
         }
     }
-    .section6{
-        &__has_before::before{
+
+    .section6 {
+        &__has_before::before {
             display: none;
         }
-        &__boxes{
+
+        &__boxes {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
             // overflow: hidden;
         }
-        &__box{
+
+        &__box {
             margin-bottom: 15px;
         }
     }
 }
 
 @media(max-width: 767.98px) {
-    .navigation{
-        &__menu2{
+    .navigation {
+        &__menu2 {
             width: 94%;
             left: 3%;
         }
     }
+
     .section2 {
         &__image img {
             width: 90%;
@@ -827,17 +918,19 @@ html{
         &__description {
             font-size: 14px;
         }
-        
+
     }
-    .section6{
-        
-        &__box p{
+
+    .section6 {
+
+        &__box p {
             font-size: 14px;
             margin: 0;
             color: #fff;
             transition: 0.5s ease;
         }
-        &__box h3{
+
+        &__box h3 {
             margin-bottom: 10px;
             color: #fff;
             font-size: 28px;

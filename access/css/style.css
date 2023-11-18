@@ -514,6 +514,28 @@ html {
   outline: none;
 }
 
+@keyframes nav_menuShowup {
+  0% {
+    height: 0%;
+    opacity: 0;
+  }
+  25% {
+    height: 25%;
+    opacity: 0.25;
+  }
+  50% {
+    height: 50%;
+    opacity: 0.5;
+  }
+  75% {
+    height: 75%;
+    opacity: 0.75;
+  }
+  100% {
+    height: 100%;
+    opacity: 1;
+  }
+}
 @media (min-width: 992px) {
   .navigation__content {
     padding: 30px !important;
@@ -528,20 +550,28 @@ html {
 @media (max-width: 991.98px) {
   .navigation__content {
     display: block;
+    overflow: hidden;
+    padding: 0px !important;
   }
   .navigation__logoAndIcon {
     display: flex;
     justify-content: space-between;
+    padding: 30px 30px 30px 30px;
   }
   .navigation__menu {
     display: none;
     margin-right: 0px;
-    padding-top: 30px;
+    padding-top: 0px;
+    margin-top: 0px;
     text-align: center;
   }
   .navigation__section {
     padding: 15px;
     border-top: 1px solid #ccc;
+    width: 100%;
+  }
+  .navigation__section:hover {
+    background-color: #ccc;
   }
   .navigation__menuIconOpen {
     display: block;
