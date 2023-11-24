@@ -1,6 +1,3 @@
-
-
-
 html {
   scroll-behavior: smooth;
 }
@@ -305,6 +302,7 @@ html {
 .section5 {
   text-align: center;
   background-color: #ffffff;
+  padding-top: 20px !important;
 }
 .section5__titleMain {
   color: #000;
@@ -633,6 +631,14 @@ html {
   .section2__description {
     font-size: 12px;
   }
+}
+.swiper-wrapper {
+  margin-bottom: 30px;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  color: #ff589e !important;
+  top: var(--swiper-navigation-top-offset, 40%) !important;
 }
 
 /*# sourceMappingURL=style.css.map */

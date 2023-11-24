@@ -18,3 +18,21 @@ menu_sections.forEach(function(item){
 })
 
 
+var swiper = new Swiper(".swiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    breakpoints: {  
+        767.98: {
+          slidesPerView: 3,
+          spaceBetween: 40,},
+      },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+  });

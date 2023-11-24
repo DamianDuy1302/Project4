@@ -410,7 +410,7 @@ html {
     @extend .commonSection;
     text-align: center;
     background-color: #ffffff;
-
+    padding-top: 20px !important;
     &__header {
         @extend .commonHeader;
 
@@ -872,4 +872,14 @@ html {
         }
 
     }
+}
+
+.swiper-wrapper{
+    margin-bottom: 30px;
+    // border: 1px solid #ccc;
+}
+.swiper-button-prev, .swiper-button-next{
+    color: #{$color-pink} !important;
+    top: var(--swiper-navigation-top-offset, 40%) !important;
+
 }
