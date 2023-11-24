@@ -12,10 +12,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel='stylesheet' href='https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css'>
+    
 </head>
 
 <body>
 
+    <script src='https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js'></script>
+
+    <script>
+        new WOW().init();
+    </script>
+    
     <div class="navigation">
         <div class="container">
             <div class="row">
@@ -88,11 +97,12 @@
                 <!-- <div class="col-12"> -->
                 <div class="section2__miniBoxes col-12">
                     <div class="col-4">
-                        <div class="section2__miniBox">
+                        <div class="section2__miniBox wow fadeInDown" data-wow-duration="1s" data-wow-delay="0s">
                             <div class="section2__miniIcon">
                                 <img src="https://templatemo.com/templates/templatemo_535_softy_pinko/assets/images/featured-item-01.png"
                                     alt="">
                             </div>
+
                             <div class="section2__miniContent">
                                 <div class="section2__miniTitle">Modern Strategy</div>
                                 <div class="section2__miniDesc">Customize anything in this template to fit your website
@@ -102,20 +112,23 @@
                     </div>
 
                     <div class="col-4">
-                        <div class="section2__miniBox">
-                            <div class="section2__miniIcon">
-                                <img src="https://templatemo.com/templates/templatemo_535_softy_pinko/assets/images/featured-item-01.png"
-                                    alt="">
-                            </div>
-                            <div class="section2__miniContent">
-                                <div class="section2__miniTitle">Modern Strategy</div>
-                                <div class="section2__miniDesc">Customize anything in this template to fit your website
-                                    needs</div>
+                        <div>
+                            <div class="section2__miniBox wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+                                <div class="section2__miniIcon">
+                                    <img src="https://templatemo.com/templates/templatemo_535_softy_pinko/assets/images/featured-item-01.png"
+                                        alt="">
+                                </div>
+                                <div class="section2__miniContent">
+                                    <div class="section2__miniTitle">Modern Strategy</div>
+                                    <div class="section2__miniDesc">Customize anything in this template to fit your
+                                        website
+                                        needs</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="section2__miniBox">
+                        <div class="section2__miniBox wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s">
                             <div class="section2__miniIcon">
                                 <img src="https://templatemo.com/templates/templatemo_535_softy_pinko/assets/images/featured-item-01.png"
                                     alt="">
@@ -134,9 +147,9 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <div class="section2__box ">
+                    <div class="section2__box">
                         <div class="col-6">
-                            <div class="section2__image">
+                            <div data-wow-duration="1s" class="section2__image wow fadeInLeft">
                                 <img src="https://templatemo.com/templates/templatemo_535_softy_pinko/assets/images/left-image.png"
                                     alt="">
                             </div>
@@ -167,7 +180,7 @@
                             </div>
                         </div>
                         <div class="col-6">
-                            <div class="section2__image">
+                            <div class="section2__image wow fadeInRight" data-wow-duration="1s">
                                 <img src="https://templatemo.com/templates/templatemo_535_softy_pinko/assets/images/right-image.png"
                                     alt="">
                             </div>
@@ -372,7 +385,7 @@
                 <div class="col-12">
                     <div class="section5__boxes">
                         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                            <div class="section5__box">
+                            <div class="section5__box wow fadeInUp" data-wow-delay="0s" data-wow-duration="1s">
                                 <div class="section5__miniTitle">Starter</div>
                                 <div class="section5__price section5__price--purple">
                                     <h3>$14.50</h3>
@@ -390,7 +403,7 @@
                             </div>
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                            <div class="section5__box">
+                            <div class="section5__box wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s">
                                 <div class="section5__miniTitle">Starter</div>
                                 <div class="section5__price section5__price--pink">
                                     <h3>$21.50</h3>
@@ -408,7 +421,7 @@
                             </div>
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                            <div class="section5__box">
+                            <div class="section5__box wow fadeInUp" data-wow-delay="1s" data-wow-duration="1s">
                                 <div class="section5__miniTitle">Starter</div>
                                 <div class="section5__price section5__price--purple">
                                     <h3>$42.50</h3>
@@ -561,6 +574,9 @@
             </div>
         </div>
     </div>
+
+   
+
 
 
 
